@@ -1,0 +1,121 @@
+configfile: 'config.yaml'
+
+rule download_annotations:
+    output:
+        'annotations.gtf.gz'
+    shell:
+        'wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.basic.annotation.gtf.gz '
+        '| mv gencode.v44.basic.annotation.gtf.gz annotations.gtf.gz'
+
+rule get_genes_and_peaks:
+    input:
+        config['rna'],
+        config['atac']
+    output:
+        'gene_names.csv',
+        'peak_names.csv'
+    conda:
+        'envs/r.yaml'
+    script:
+        'scripts/get_gene_and_peak_names.R'
+
+rule annotate_genes_and_peaks:
+    input:
+        'gene_names.csv',
+        'peak_names.csv',
+        'annotations.gtf.gz'
+    output:
+        'annotated_gene_names.bed',
+        'annotated_peak_names.bed'
+    conda:
+        'envs/pandas.yaml'
+    script:
+        'scripts/annotate_genes_and_peaks.py'
+
+rule run_bedtools_window:
+    input:
+        'annotated_gene_names.bed',
+        'annotated_peak_names.bed'
+    output:
+        'gene_peak_pairs.bed'
+    conda:
+        'envs/bedtools.yaml'
+    shell:
+        'bedtools window -a annotated_gene_names.bed -b annotated_peak_names.bed -w 500000 > gene_peak_pairs.bed'
+
+rule filter_split_peak_gene_pairs:
+    input:
+        'gene_peak_pairs.bed',
+        'gene_names.csv'
+    output:
+        'filtered_gene_peak_pairs_{split}.csv'
+    conda:
+        'envs/pandas.yaml'
+    script:
+        'scripts/filter_gene_peak_pairs.py'
+
+rule run_SCENT:
+    input:
+        config['rna'],
+        config['atac'],
+        config['meta'],
+        'filtered_gene_peak_pairs_{split}.csv'
+    output:
+        'SCENT_output_{split}.csv'
+    params:
+        celltype = config['celltype']
+    conda:
+        'envs/SCENT.yaml'
+    script:
+        'scripts/run_SCENT.R'
+
+SAMPLES = range(1, 33)
+
+rule find_enhancer_pairs:
+    input:
+        expand('SCENT_output_{sample}.csv', sample=SAMPLES)
+    output:
+        'significant_peak_gene_associations.csv',
+        expand('enhancer_pairs_{sample}.csv', sample=SAMPLES)
+    conda:
+        'envs/pandas.yaml'
+    script:
+        'scripts/find_enhancer_pairs.py'
+
+rule run_epistasis_model:
+    input:
+        config['rna'],
+        config['atac'],
+        config['meta'],
+        'enhancer_pairs_{split}.csv'
+    output:
+        'epistasis_models_{split}.csv'
+    params:
+        celltype = config['celltype']
+    conda:
+        'envs/seurat.yaml'
+    script:
+        'scripts/run_epistasis_model.R'
+
+rule plot_volcano_plot:
+    input:
+        expand('epistasis_models_{sample}.csv', sample=SAMPLES)
+    output:
+        'volcano_plot.png'
+    conda:
+        'envs/r.yaml'
+    script:
+        'scripts/plot_interaction_volcano_plot.R'
+
+rule generate_p_value_tables:
+    input:
+        expand('epistasis_models_{sample}.csv', sample=SAMPLES)
+    output:
+        'significant_epistasis_5e4_threshold.csv',
+        'significant_epistasis_FDR10_threshold.csv',
+        'significant_epistasis_gene_wise_threshold.csv'
+    conda:
+        'envs/pandas.yaml'
+    script:
+        'generate_p_value_tables.py'
+

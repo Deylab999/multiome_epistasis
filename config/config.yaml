@@ -1,0 +1,4 @@
+rna: /data/deyk/scdata/ESC_Huangfu_2023/rna_matrix.rds
+atac: /data/deyk/scdata/ESC_Huangfu_2023/atac_matrix.rds
+meta: /data/deyk/scdata/ESC_Huangfu_2023/metadata.rds
+celltype: 'ESC'
