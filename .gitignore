@@ -3,4 +3,4 @@ resources/**
 logs/**
 .snakemake
 .snakemake/**
-config/
+config/**
