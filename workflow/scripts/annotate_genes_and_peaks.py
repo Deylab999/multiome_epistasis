@@ -10,8 +10,6 @@ Author: Karthik Guruvayurappan
 import numpy as np
 import pandas as pd
 
-print(snakemake.input[1])
-
 # read in Gencode annotations
 gencode_names = [
     'seqname',

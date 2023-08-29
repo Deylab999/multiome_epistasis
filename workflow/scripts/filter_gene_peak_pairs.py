@@ -54,5 +54,5 @@ gene_peak_split_pairs = np.array_split(gene_peak_pairs, 32)
 # write files to output CSV files
 for i in np.arange(32):
     gene_peak_split_pairs[i].to_csv(
-        'results/filtered_gene_peak_pairs_' + str(i+1) + '.csv',
+        snakemake.output[i],
         index=False)

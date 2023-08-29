@@ -12,12 +12,11 @@ from scipy.stats import false_discovery_control
 # concatenate all peak-gene results across 16 SCENT batch runs
 peak_gene_results = []
 
-for i in np.arange(1, 33):
+for i in np.arange(32):
     peak_gene_results.append(
-        pd.read_csv('results/SCENT_output_' + str(i) + '.csv', sep=' ')
+        pd.read_csv(snakemake.input[i], sep=' ')
     )
 peak_gene_results = pd.concat(peak_gene_results)
-print(peak_gene_results.shape)
 
 # perform multiple testing correction on p-values
 peak_gene_results['adj_p'] = false_discovery_control(peak_gene_results['p'])
@@ -27,7 +26,7 @@ peak_gene_results = peak_gene_results[peak_gene_results['adj_p'] < 0.1]
 
 # write significant peak-gene pairs to output file (for reference)
 peak_gene_results.to_csv(
-    'results/significant_peak_gene_associations.csv',
+    snakemake.output[0],
     index = False
 )
 
@@ -69,5 +68,5 @@ enhancer_pair_split_df = np.array_split(enhancer_pair_df, 32)
 # write files to output CSV files
 for i in np.arange(32):
     enhancer_pair_split_df[i].to_csv(
-        'results/enhancer_pairs_' + str(i+1) + '.csv',
+        snakemake.output[i+1],
         index=False)

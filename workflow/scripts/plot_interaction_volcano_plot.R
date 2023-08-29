@@ -10,10 +10,8 @@ library(scales)
 # iterate through different model output files
 all.epistasis.models <- data.frame()
 for (i in 1:32) {
-    # create filename
-    filename <- paste0('results/epistasis_models_', i, '.csv')
     # read in epistasis models from batch
-    epistasis.models <- read.csv(filename)
+    epistasis.models <- read.csv(snakemake@input[[i]])
     # add model results to combined data frame
     all.epistasis.models <- rbind(all.epistasis.models, epistasis.models)
 }
@@ -69,6 +67,6 @@ plot <- ggplot(epistasis.models, aes(
     theme_classic()
 
 ggsave(
-    'results/volcano_plot.png',
+    snakemake@output[[1]],
     plot
 )
