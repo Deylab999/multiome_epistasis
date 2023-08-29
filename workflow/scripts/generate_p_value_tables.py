@@ -18,7 +18,7 @@ NUM_BATCHES = 32
 epistasis_models = pd.DataFrame()
 
 for i in range(NUM_BATCHES):
-    filename = 'epistasis_models_' + str(i+1) + '.csv'
+    filename = 'results/epistasis_models_' + str(i+1) + '.csv'
     batch_models = pd.read_csv(filename)
     epistasis_models = pd.concat([epistasis_models, batch_models])
 
@@ -35,7 +35,7 @@ significant_results = epistasis_models[
 
 # write output to CSV file
 significant_results.to_csv(
-    'significant_epistasis_5e4_threshold.csv',
+    'results/significant_epistasis_5e4_threshold.csv',
     index=False
 )
 
@@ -51,7 +51,7 @@ significant_results = epistasis_models[
 
 # write output to CSV file
 significant_results.to_csv(
-    'significant_epistasis_FDR10_threshold.csv',
+    'results/significant_epistasis_FDR10_threshold.csv',
     index=False
 )
 
@@ -83,6 +83,6 @@ significant_results = epistasis_models[
 
 # write output to CSV file
 significant_results.to_csv(
-    'significant_epistasis_gene_wise_threshold.csv',
+    'results/significant_epistasis_gene_wise_threshold.csv',
     index=False
 )

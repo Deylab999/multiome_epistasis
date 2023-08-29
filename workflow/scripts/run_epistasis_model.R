@@ -46,10 +46,11 @@ for (i in 1:nrow(enhancer.pairs)) {
     enhancer.2.atac <- atac[enhancer.2, ]
     gene.rna <- rna[gene, ]
     percent.mito <- metadata$percent.mito
+    umis <- metadata$nUMI
 
     # fit linear model
     mdl <- glm(
-        gene.rna ~ enhancer.1.atac * enhancer.2.atac + percent.mito,
+        gene.rna ~ enhancer.1.atac * enhancer.2.atac + percent.mito + log(umis),
         family = 'poisson'
     )
 
@@ -73,14 +74,14 @@ for (i in 1:nrow(enhancer.pairs)) {
 
     if ("enhancer.1.atac" %in% rownames(mdl.values)) {
         beta.1.estimate <- mdl.values['enhancer.1.atac', 'Estimate']
-        beta.1.pvalue <- mdl.values['enhancer.1.atac', 'Pr(>|t|)']
+        beta.1.pvalue <- mdl.values['enhancer.1.atac', 'Pr(>|z|)']
 
 
     }
 
     if ("enhancer.2.atac" %in% rownames(mdl.values)) {
         beta.2.estimate <- mdl.values['enhancer.2.atac', 'Estimate']
-        beta.2.pvalue <- mdl.values['enhancer.2.atac', 'Pr(>|t|)']
+        beta.2.pvalue <- mdl.values['enhancer.2.atac', 'Pr(>|z|)']
     }
 
     if ("enhancer.1.atac:enhancer.2.atac" %in% rownames(mdl.values)) {
@@ -90,7 +91,7 @@ for (i in 1:nrow(enhancer.pairs)) {
         ]
         interaction.pvalue <- mdl.values[
             'enhancer.1.atac:enhancer.2.atac',
-            'Pr(>|t|)'
+            'Pr(>|z|)'
         ]
     }
 

@@ -1,5 +1,5 @@
 # source Karthik's version of SCENT (derived from SCENT GitHub)
-source('scripts/SCENTfunctions.R')
+source('workflow/scripts/SCENTfunctions.R')
 
 library(Matrix)
 

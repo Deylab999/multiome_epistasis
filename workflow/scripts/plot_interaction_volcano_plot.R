@@ -10,13 +10,10 @@ library(scales)
 # iterate through different model output files
 all.epistasis.models <- data.frame()
 for (i in 1:32) {
-
     # create filename
-    filename <- paste0('epistasis_models_', i, '.csv')
-
+    filename <- paste0('results/epistasis_models_', i, '.csv')
     # read in epistasis models from batch
     epistasis.models <- read.csv(filename)
-
     # add model results to combined data frame
     all.epistasis.models <- rbind(all.epistasis.models, epistasis.models)
 }
@@ -57,33 +54,21 @@ epistasis.models$distance <- abs(
 # calculate log of distance (for plotting)
 epistasis.models$log.dist <- log10(epistasis.models$distance)
 
+# mark whether significant or not
+epistasis.models$adj.p <- p.adjust(epistasis.models$interaction.pvalue, method = 'fdr')
+epistasis.models$is.significant <- epistasis.models$adj.p < 0.1
+cols <- c("TRUE"= 'red', "FALSE" = 'black')
 # create volcano plot
 plot <- ggplot(epistasis.models, aes(
     interaction.estimate,
     neglog10p,
-    colour = log.dist
+    alpha = 0.5,
     )) +
-    geom_point() +
-    scale_colour_gradient2(
-        low = muted('red'),
-        high = muted('blue'),
-        midpoint = floor(min(epistasis.models$log.dist)),
-        limits=c(
-            min(epistasis.models$log.dist),
-            max(epistasis.models$log.dist)
-        ),
-        breaks = seq(
-            floor(min(epistasis.models$log.dist)),
-            ceiling(max(epistasis.models$log.dist))
-        ),
-        labels = seq(
-            floor(min(epistasis.models$log.dist)),
-            ceiling(max(epistasis.models$log.dist))
-        )
-    ) +
+    geom_point(aes(color = factor(epistasis.models$is.significant))) +
+    scale_color_manual(values = cols) +
     theme_classic()
 
 ggsave(
-    'volcano_plot.png',
+    'results/volcano_plot.png',
     plot
 )

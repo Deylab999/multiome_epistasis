@@ -1,19 +1,20 @@
-configfile: 'config.yaml'
+configfile: 'config/config.yaml'
 
 rule download_annotations:
     output:
-        'annotations.gtf.gz'
-    shell:
-        'wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.basic.annotation.gtf.gz '
-        '| mv gencode.v44.basic.annotation.gtf.gz annotations.gtf.gz'
+        'resources/annotations.gtf.gz'
+    run:
+        shell('wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.basic.annotation.gtf.gz')
+        shell('mv gencode.v44.basic.annotation.gtf.gz annotations.gtf.gz')
+        shell('mv annotations.gtf.gz resources/')
 
 rule get_genes_and_peaks:
     input:
         config['rna'],
         config['atac']
     output:
-        'gene_names.csv',
-        'peak_names.csv'
+        'results/gene_names.csv',
+        'results/peak_names.csv'
     conda:
         'envs/r.yaml'
     script:
@@ -21,12 +22,12 @@ rule get_genes_and_peaks:
 
 rule annotate_genes_and_peaks:
     input:
-        'gene_names.csv',
-        'peak_names.csv',
-        'annotations.gtf.gz'
+        'results/gene_names.csv',
+        'results/peak_names.csv',
+        'resources/annotations.gtf.gz'
     output:
-        'annotated_gene_names.bed',
-        'annotated_peak_names.bed'
+        'results/annotated_gene_names.bed',
+        'results/annotated_peak_names.bed'
     conda:
         'envs/pandas.yaml'
     script:
@@ -34,21 +35,32 @@ rule annotate_genes_and_peaks:
 
 rule run_bedtools_window:
     input:
-        'annotated_gene_names.bed',
-        'annotated_peak_names.bed'
+        'results/annotated_gene_names.bed',
+        'results/annotated_peak_names.bed'
     output:
-        'gene_peak_pairs.bed'
+        'results/gene_peak_pairs.bed'
     conda:
         'envs/bedtools.yaml'
     shell:
-        'bedtools window -a annotated_gene_names.bed -b annotated_peak_names.bed -w 500000 > gene_peak_pairs.bed'
+        'bedtools window -a results/annotated_gene_names.bed -b results/annotated_peak_names.bed -w 500000 > results/gene_peak_pairs.bed'
+
+rule find_highly_variable_genes:
+    input:
+        config['rna']
+    output:
+        'results/highly_variable_genes.csv'
+    conda:
+        'envs/seurat.yaml'
+    script:
+        'scripts/find_highly_variable_genes.R'
 
 rule filter_split_peak_gene_pairs:
     input:
-        'gene_peak_pairs.bed',
-        'gene_names.csv'
+        'results/gene_peak_pairs.bed',
+        'results/gene_names.csv',
+        'results/highly_variable_genes.csv'
     output:
-        'filtered_gene_peak_pairs_{split}.csv'
+        'results/filtered_gene_peak_pairs_{split}.csv'
     conda:
         'envs/pandas.yaml'
     script:
@@ -59,9 +71,9 @@ rule run_SCENT:
         config['rna'],
         config['atac'],
         config['meta'],
-        'filtered_gene_peak_pairs_{split}.csv'
+        'results/filtered_gene_peak_pairs_{split}.csv'
     output:
-        'SCENT_output_{split}.csv'
+        'results/SCENT_output_{split}.csv'
     params:
         celltype = config['celltype']
     conda:
@@ -73,10 +85,10 @@ SAMPLES = range(1, 33)
 
 rule find_enhancer_pairs:
     input:
-        expand('SCENT_output_{sample}.csv', sample=SAMPLES)
+        expand('results/SCENT_output_{sample}.csv', sample=SAMPLES)
     output:
-        'significant_peak_gene_associations.csv',
-        expand('enhancer_pairs_{sample}.csv', sample=SAMPLES)
+        'results/significant_peak_gene_associations.csv',
+        expand('results/enhancer_pairs_{sample}.csv', sample=SAMPLES)
     conda:
         'envs/pandas.yaml'
     script:
@@ -87,9 +99,9 @@ rule run_epistasis_model:
         config['rna'],
         config['atac'],
         config['meta'],
-        'enhancer_pairs_{split}.csv'
+        'results/enhancer_pairs_{split}.csv'
     output:
-        'epistasis_models_{split}.csv'
+        'results/epistasis_models_{split}.csv'
     params:
         celltype = config['celltype']
     conda:
@@ -99,9 +111,9 @@ rule run_epistasis_model:
 
 rule plot_volcano_plot:
     input:
-        expand('epistasis_models_{sample}.csv', sample=SAMPLES)
+        expand('results/epistasis_models_{sample}.csv', sample=SAMPLES)
     output:
-        'volcano_plot.png'
+        'results/volcano_plot.png'
     conda:
         'envs/r.yaml'
     script:
@@ -109,13 +121,12 @@ rule plot_volcano_plot:
 
 rule generate_p_value_tables:
     input:
-        expand('epistasis_models_{sample}.csv', sample=SAMPLES)
+        expand('results/epistasis_models_{sample}.csv', sample=SAMPLES)
     output:
-        'significant_epistasis_5e4_threshold.csv',
-        'significant_epistasis_FDR10_threshold.csv',
-        'significant_epistasis_gene_wise_threshold.csv'
+        'results/significant_epistasis_5e4_threshold.csv',
+        'results/significant_epistasis_FDR10_threshold.csv',
+        'results/significant_epistasis_gene_wise_threshold.csv'
     conda:
         'envs/pandas.yaml'
     script:
-        'generate_p_value_tables.py'
-
+        'scripts/generate_p_value_tables.py'

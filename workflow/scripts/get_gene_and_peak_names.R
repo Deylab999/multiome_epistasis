@@ -26,5 +26,5 @@ genes <- rownames(rna)
 peaks <- rownames(atac)
 
 # write gene and peak names to output CSV files
-write.csv(genes, 'gene_names.csv', row.names = FALSE)
-write.csv(peaks, 'peak_names.csv', row.names = FALSE)
+write.csv(genes, snakemake@output[[1]], row.names = FALSE)
+write.csv(peaks, snakemake@output[[2]], row.names = FALSE)

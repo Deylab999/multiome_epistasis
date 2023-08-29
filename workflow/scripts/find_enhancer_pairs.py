@@ -14,7 +14,7 @@ peak_gene_results = []
 
 for i in np.arange(1, 33):
     peak_gene_results.append(
-        pd.read_csv('SCENT_output_' + str(i) + '.csv', sep=' ')
+        pd.read_csv('results/SCENT_output_' + str(i) + '.csv', sep=' ')
     )
 peak_gene_results = pd.concat(peak_gene_results)
 print(peak_gene_results.shape)
@@ -27,7 +27,7 @@ peak_gene_results = peak_gene_results[peak_gene_results['adj_p'] < 0.1]
 
 # write significant peak-gene pairs to output file (for reference)
 peak_gene_results.to_csv(
-    'significant_peak_gene_associations.csv',
+    'results/significant_peak_gene_associations.csv',
     index = False
 )
 
@@ -69,5 +69,5 @@ enhancer_pair_split_df = np.array_split(enhancer_pair_df, 32)
 # write files to output CSV files
 for i in np.arange(32):
     enhancer_pair_split_df[i].to_csv(
-        'enhancer_pairs_' + str(i+1) + '.csv',
+        'results/enhancer_pairs_' + str(i+1) + '.csv',
         index=False)
