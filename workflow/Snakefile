@@ -108,9 +108,25 @@ rule run_epistasis_model:
     script:
         'scripts/run_epistasis_model.R'
 
+rule run_normal_model:
+    input:
+        config['rna'],
+        config['atac'],
+        config['meta'],
+        'results/enhancer_pairs/enhancer_pairs_{split}.csv'
+    output:
+        'results/epistasis_models_normal/epistasis_models_normal_{split}.csv'
+    params:
+        celltype = config['celltype']
+    conda:
+        'envs/seurat.yaml'
+    script:
+        'scripts/run_epistasis_model_normal.R'
+
 rule plot_volcano_plot:
     input:
-        expand('results/epistasis_models/epistasis_models_{sample}.csv', sample=SAMPLES)
+        expand('results/epistasis_models/epistasis_models_{sample}.csv', sample=SAMPLES),
+        expand('results/epistasis_models_normal/epistasis_models_normal_{sample}.csv', sample=SAMPLES)
     output:
         'results/plot/volcano_plot.png'
     conda:
