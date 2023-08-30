@@ -3096,3 +3096,1359 @@ PS:
 
 Read file <err.txt> for stderr output of this job.
 
+Sender: LSF System <lsfadmin@ln05>
+Subject: Job 19539302: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.77.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.77.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ln05>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:07:41 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:07:41 2023
+Terminated at Wed Aug 30 11:14:19 2023
+Results reported at Wed Aug 30 11:14:19 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.77.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   397.62 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.61 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   398 sec.
+    Turnaround time :                            773 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lf02>
+Subject: Job 19539298: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.46.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.46.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:25 2023
+Job was executed on host(s) <lf02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:04:25 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:04:25 2023
+Terminated at Wed Aug 30 11:14:38 2023
+Results reported at Wed Aug 30 11:14:38 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.46.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   608.16 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.83 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   614 sec.
+    Turnaround time :                            793 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lf02>
+Subject: Job 19539299: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.97.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.97.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:25 2023
+Job was executed on host(s) <lf02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:04:48 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:04:48 2023
+Terminated at Wed Aug 30 11:14:40 2023
+Results reported at Wed Aug 30 11:14:40 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.97.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   588.84 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.65 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   593 sec.
+    Turnaround time :                            795 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt17>
+Subject: Job 19539288: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.54.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.54.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:24 2023
+Job was executed on host(s) <lt17>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:04:10 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:04:10 2023
+Terminated at Wed Aug 30 11:14:52 2023
+Results reported at Wed Aug 30 11:14:52 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.54.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   632.00 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.64 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   641 sec.
+    Turnaround time :                            808 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt05>
+Subject: Job 19539285: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.75.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.75.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:24 2023
+Job was executed on host(s) <lt05>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:04:10 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:04:10 2023
+Terminated at Wed Aug 30 11:14:56 2023
+Results reported at Wed Aug 30 11:14:56 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.75.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   640.90 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.62 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   648 sec.
+    Turnaround time :                            812 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ls17>
+Subject: Job 19539296: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.62.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.62.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:25 2023
+Job was executed on host(s) <ls17>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:04:10 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:04:10 2023
+Terminated at Wed Aug 30 11:15:01 2023
+Results reported at Wed Aug 30 11:15:01 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.62.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   646.32 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.63 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                19
+    Run time :                                   653 sec.
+    Turnaround time :                            816 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ln02>
+Subject: Job 19539303: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.70.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.70.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ln02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:08:26 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:08:26 2023
+Terminated at Wed Aug 30 11:15:02 2023
+Results reported at Wed Aug 30 11:15:02 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.70.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   403.75 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.82 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   396 sec.
+    Turnaround time :                            816 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt18>
+Subject: Job 19539280: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.51.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.51.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:24 2023
+Job was executed on host(s) <lt18>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:01:55 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:01:55 2023
+Terminated at Wed Aug 30 11:15:11 2023
+Results reported at Wed Aug 30 11:15:11 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.51.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   793.84 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.79 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                10
+    Run time :                                   797 sec.
+    Turnaround time :                            827 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lf02>
+Subject: Job 19539306: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.47.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.47.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <lf02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:09:18 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:09:18 2023
+Terminated at Wed Aug 30 11:15:11 2023
+Results reported at Wed Aug 30 11:15:11 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.47.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   350.88 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.74 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   354 sec.
+    Turnaround time :                            825 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt22>
+Subject: Job 19539269: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.45.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.45.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:23 2023
+Job was executed on host(s) <lt22>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:01:24 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:01:24 2023
+Terminated at Wed Aug 30 11:15:38 2023
+Results reported at Wed Aug 30 11:15:38 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.45.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   844.44 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.79 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   854 sec.
+    Turnaround time :                            855 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt22>
+Subject: Job 19539268: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.50.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.50.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:23 2023
+Job was executed on host(s) <lt22>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:01:24 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:01:24 2023
+Terminated at Wed Aug 30 11:15:38 2023
+Results reported at Wed Aug 30 11:15:38 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.50.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   844.59 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.77 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   855 sec.
+    Turnaround time :                            855 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ln02>
+Subject: Job 19539304: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.63.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.63.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ln02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:08:32 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:08:32 2023
+Terminated at Wed Aug 30 11:16:28 2023
+Results reported at Wed Aug 30 11:16:28 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.63.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   483.06 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.83 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                13
+    Run time :                                   476 sec.
+    Turnaround time :                            902 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ln01>
+Subject: Job 19539313: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.1.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.1.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ln01>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:19 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:19 2023
+Terminated at Wed Aug 30 11:16:49 2023
+Results reported at Wed Aug 30 11:16:49 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.1.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   387.90 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.76 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   390 sec.
+    Turnaround time :                            923 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ln02>
+Subject: Job 19539305: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.56.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.56.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ln02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:08:57 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:08:57 2023
+Terminated at Wed Aug 30 11:16:54 2023
+Results reported at Wed Aug 30 11:16:54 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.56.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   482.48 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.74 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   477 sec.
+    Turnaround time :                            928 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lf02>
+Subject: Job 19539317: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.92.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.92.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <lf02>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:11:28 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:11:28 2023
+Terminated at Wed Aug 30 11:17:03 2023
+Results reported at Wed Aug 30 11:17:03 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.92.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   329.62 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.56 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   335 sec.
+    Turnaround time :                            936 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt18>
+Subject: Job 19539308: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.91.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.91.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <lt18>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:09:50 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:09:50 2023
+Terminated at Wed Aug 30 11:17:34 2023
+Results reported at Wed Aug 30 11:17:34 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.91.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   462.64 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.64 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   464 sec.
+    Turnaround time :                            968 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt18>
+Subject: Job 19539307: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.98.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.98.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <lt18>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:09:50 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:09:50 2023
+Terminated at Wed Aug 30 11:17:37 2023
+Results reported at Wed Aug 30 11:17:37 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.98.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   462.74 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.64 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   465 sec.
+    Turnaround time :                            971 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ln01>
+Subject: Job 19539309: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.85.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.85.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ln01>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:09:52 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:09:52 2023
+Terminated at Wed Aug 30 11:18:00 2023
+Results reported at Wed Aug 30 11:18:00 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.85.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   483.50 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.63 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   487 sec.
+    Turnaround time :                            994 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lu03>
+Subject: Job 19539261: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.93.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.93.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:22 2023
+Job was executed on host(s) <lu03>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:01:24 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:01:24 2023
+Terminated at Wed Aug 30 11:18:16 2023
+Results reported at Wed Aug 30 11:18:16 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.93.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   498.79 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             1.81 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              9
+    Max Threads :                                11
+    Run time :                                   1013 sec.
+    Turnaround time :                            1014 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lx08>
+Subject: Job 19539310: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.78.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.78.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <lx08>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:03 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:03 2023
+Terminated at Wed Aug 30 11:18:27 2023
+Results reported at Wed Aug 30 11:18:27 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.78.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   498.34 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.59 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   503 sec.
+    Turnaround time :                            1021 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt22>
+Subject: Job 19539316: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.99.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.99.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <lt22>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:27 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:27 2023
+Terminated at Wed Aug 30 11:18:37 2023
+Results reported at Wed Aug 30 11:18:37 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.99.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   486.94 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.63 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   490 sec.
+    Turnaround time :                            1030 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ls09>
+Subject: Job 19539311: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.71.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.71.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ls09>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:03 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:03 2023
+Terminated at Wed Aug 30 11:18:38 2023
+Results reported at Wed Aug 30 11:18:38 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.71.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   513.17 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.81 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   514 sec.
+    Turnaround time :                            1032 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ls03>
+Subject: Job 19539312: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.64.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.64.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <ls03>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:19 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:19 2023
+Terminated at Wed Aug 30 11:18:42 2023
+Results reported at Wed Aug 30 11:18:42 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.64.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   500.88 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.68 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   502 sec.
+    Turnaround time :                            1036 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ls03>
+Subject: Job 19539315: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.48.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.48.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <ls03>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:20 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:20 2023
+Terminated at Wed Aug 30 11:18:53 2023
+Results reported at Wed Aug 30 11:18:53 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.48.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   512.23 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.78 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   513 sec.
+    Turnaround time :                            1046 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt18>
+Subject: Job 19539314: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.57.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.57.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:26 2023
+Job was executed on host(s) <lt18>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:10:19 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:10:19 2023
+Terminated at Wed Aug 30 11:19:09 2023
+Results reported at Wed Aug 30 11:19:09 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.57.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   524.57 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.77 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   529 sec.
+    Turnaround time :                            1063 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lx14>
+Subject: Job 19539319: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.72.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.72.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <lx14>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:12:12 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:12:12 2023
+Terminated at Wed Aug 30 11:20:08 2023
+Results reported at Wed Aug 30 11:20:08 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.72.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   473.00 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.61 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   476 sec.
+    Turnaround time :                            1121 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt09>
+Subject: Job 19539321: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.58.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.58.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <lt09>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:12:16 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:12:16 2023
+Terminated at Wed Aug 30 11:20:22 2023
+Results reported at Wed Aug 30 11:20:22 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.58.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   483.46 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.77 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                10
+    Run time :                                   485 sec.
+    Turnaround time :                            1135 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ls06>
+Subject: Job 19539320: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.65.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.65.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <ls06>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:12:15 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:12:15 2023
+Terminated at Wed Aug 30 11:20:46 2023
+Results reported at Wed Aug 30 11:20:46 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.65.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   509.08 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.78 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   511 sec.
+    Turnaround time :                            1159 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ls16>
+Subject: Job 19539322: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.49.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.49.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <ls16>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:12:21 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:12:21 2023
+Terminated at Wed Aug 30 11:20:54 2023
+Results reported at Wed Aug 30 11:20:54 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_epistasis_model.49.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   508.88 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.66 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   513 sec.
+    Turnaround time :                            1167 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lf01>
+Subject: Job 19539318: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.79.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.79.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:01:27 2023
+Job was executed on host(s) <lf01>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:11:57 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:11:57 2023
+Terminated at Wed Aug 30 11:22:18 2023
+Results reported at Wed Aug 30 11:22:18 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.run_normal_model.79.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   603.73 sec.
+    Max Memory :                                 4 GB
+    Average Memory :                             3.54 GB
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               12.00 GB
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   621 sec.
+    Turnaround time :                            1251 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lu03>
+Subject: Job 19539597: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.plot_volcano_plot.0.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.plot_volcano_plot.0.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:22:22 2023
+Job was executed on host(s) <lu03>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:22:24 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:22:24 2023
+Terminated at Wed Aug 30 11:26:39 2023
+Results reported at Wed Aug 30 11:26:39 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.d989m1oa/snakejob.plot_volcano_plot.0.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   10.82 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              9
+    Max Threads :                                11
+    Run time :                                   255 sec.
+    Turnaround time :                            257 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@ln05>
+Subject: Job 19539602: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.1mtnmi69/snakejob.plot_volcano_plot.0.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.1mtnmi69/snakejob.plot_volcano_plot.0.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 11:28:32 2023
+Job was executed on host(s) <ln05>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 11:28:34 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 11:28:34 2023
+Terminated at Wed Aug 30 11:28:43 2023
+Results reported at Wed Aug 30 11:28:43 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.1mtnmi69/snakejob.plot_volcano_plot.0.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   6.18 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              6
+    Max Threads :                                9
+    Run time :                                   11 sec.
+    Turnaround time :                            11 sec.
+
+The output (if any) follows:
+
+[1] 454
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@lt13>
+Subject: Job 19541029: </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.0bpv9a7n/snakejob.plot_volcano_plot.0.sh> in cluster <lila> Done
+
+Job </lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.0bpv9a7n/snakejob.plot_volcano_plot.0.sh> was submitted from host <lilac-ln02> by user <guruvak> in cluster <lila> at Wed Aug 30 13:20:49 2023
+Job was executed on host(s) <lt13>, in queue <cpuqueue>, as user <guruvak> in cluster <lila> at Wed Aug 30 13:20:52 2023
+</home/guruvak> was used as the home directory.
+</data/deyk/karthik/multiome_epistasis> was used as the working directory.
+Started at Wed Aug 30 13:20:52 2023
+Terminated at Wed Aug 30 13:21:56 2023
+Results reported at Wed Aug 30 13:21:56 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+/lila/data/deyk/karthik/multiome_epistasis/.snakemake/tmp.0bpv9a7n/snakejob.plot_volcano_plot.0.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   10.31 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     16.00 GB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              12
+    Max Threads :                                14
+    Run time :                                   64 sec.
+    Turnaround time :                            67 sec.
+
+The output (if any) follows:
+
+[1] 454
+[1] 1
+
+
+PS:
+
+Read file <err.txt> for stderr output of this job.
+

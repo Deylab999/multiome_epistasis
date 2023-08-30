@@ -128,7 +128,8 @@ rule plot_volcano_plot:
         expand('results/epistasis_models/epistasis_models_{sample}.csv', sample=SAMPLES),
         expand('results/epistasis_models_normal/epistasis_models_normal_{sample}.csv', sample=SAMPLES)
     output:
-        'results/plot/volcano_plot.png'
+        'results/plot/volcano_plot.png',
+        'results/plot/volcano_plot_normal.png'
     conda:
         'envs/r.yaml'
     script:
