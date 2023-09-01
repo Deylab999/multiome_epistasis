@@ -30,7 +30,7 @@ scent.object <- CreateSCENTObj(
 scent.object <- SCENT_algorithm(
     object = scent.object,
     celltype = snakemake@params[['celltype']],
-    ncores = 1
+    ncores = 8
 )
 
 # write output results to a table

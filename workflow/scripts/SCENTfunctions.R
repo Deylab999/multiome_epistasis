@@ -170,14 +170,13 @@ SCENT_algorithm <- function(object, celltype, ncores){
       base = glm(formula, family = 'poisson', data = df2)
       coefs<-summary(base)$coefficients["atac",]
 
-#       print('running abbreviated bootstraps! :)')
-      ###Iterative Bootstrapping Procedure: Estimate the Beta coefficients and associate a 2-sided p-value.
-#       bs = boot::boot(df2,assoc_poisson, R = 100, formula = formula, stype = 'i', parallel = "multicore", ncpus = ncores)
-#       p0 = basic_p(bs$t0[1], bs$t[,1])
-#       if(p0<0.1){
-#         bs = boot::boot(df2,assoc_poisson, R = 500, formula = formula,  stype = 'i', parallel = "multicore", ncpus = ncores)
-#         p0 = basic_p(bs$t0[1], bs$t[,1])
-#       }
+      ##Iterative Bootstrapping Procedure: Estimate the Beta coefficients and associate a 2-sided p-value.
+      bs = boot::boot(df2,assoc_poisson, R = 100, formula = formula, stype = 'i', parallel = "multicore", ncpus = ncores)
+      p0 = basic_p(bs$t0[1], bs$t[,1])
+      if(p0<0.1){
+        bs = boot::boot(df2,assoc_poisson, R = 5000, formula = formula,  stype = 'i', parallel = "multicore", ncpus = ncores)
+        p0 = basic_p(bs$t0[1], bs$t[,1])
+      }
 #       if(p0<0.05){
 #         bs = boot::boot(df2,assoc_poisson, R = 2500, formula = formula,  stype = 'i', parallel = "multicore", ncpus = ncores)
 #         p0 = basic_p(bs$t0[1], bs$t[,1])
@@ -190,8 +189,8 @@ SCENT_algorithm <- function(object, celltype, ncores){
 #         bs = boot::boot(df2,assoc_poisson, R = 50000, formula = formula, stype = 'i', parallel = "multicore", ncpus = ncores)
 #         p0 = basic_p(bs$t0[1], bs$t[,1])
 #       }
-#       out <- data.frame(gene=gene,peak=this_peak,beta=coefs[1],se=coefs[2],z=coefs[3],p=coefs[4],boot_basic_p=p0)
-      out <- data.frame(gene=gene,peak=this_peak,beta=coefs[1],se=coefs[2],z=coefs[3],p=coefs[4])
+      out <- data.frame(gene=gene,peak=this_peak,beta=coefs[1],se=coefs[2],z=coefs[3],p=coefs[4],boot_basic_p=p0)
+      # out <- data.frame(gene=gene,peak=this_peak,beta=coefs[1],se=coefs[2],z=coefs[3],p=coefs[4])
       res<-rbind(res,out)
     }
   }

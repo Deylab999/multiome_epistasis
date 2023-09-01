@@ -86,3 +86,76 @@ significant_results.to_csv(
     snakemake.output[2],
     index=False
 )
+
+# concatenate results across all epistatic models
+epistasis_models = pd.DataFrame()
+
+for i in range(NUM_BATCHES):
+    filename = snakemake.input[i+32]
+    batch_models = pd.read_csv(filename)
+    epistasis_models = pd.concat([epistasis_models, batch_models])
+
+epistasis_models.columns = [
+    'gene', 'enhancer_1', 'enhancer_2', 'intercept', 'beta_1_estimate',
+    'beta_1_pvalue', 'beta_2_estimate', 'beta_2_pvalue',
+    'interaction_estimate', 'interaction_pvalue'
+]
+
+# compute significant results for threshold 3
+significant_results = epistasis_models[
+    epistasis_models['interaction_pvalue'] < 5e-4
+]
+
+# write output to CSV file
+significant_results.to_csv(
+    snakemake.output[3],
+    index=False
+)
+
+# compute significant results for threshold 1
+epistasis_models = epistasis_models.dropna()
+epistasis_models['fdr_pvalue'] = false_discovery_control(
+    epistasis_models['interaction_pvalue']
+)
+
+significant_results = epistasis_models[
+    epistasis_models['fdr_pvalue'] < 0.1
+]
+
+# write output to CSV file
+significant_results.to_csv(
+    snakemake.output[4],
+    index=False
+)
+
+# filter for significant results from threshold 2
+gene_adj_epistasis_models = pd.DataFrame()
+
+genes = epistasis_models['gene'].unique()
+
+for gene in genes:
+
+    # get models for that gene
+    gene_models = epistasis_models.groupby('gene').get_group(gene)
+
+    # perform FDR correction on p-values for gene
+    gene_models['fdr_pvalue'] = false_discovery_control(
+        gene_models['interaction_pvalue']
+    )
+
+    # add gene-adjusted p-values to combined data frame
+    gene_adj_epistasis_models = (
+        pd.concat([gene_adj_epistasis_models, gene_models])
+    )
+
+# write significant results to dataframe
+epistasis_models = gene_adj_epistasis_models
+significant_results = epistasis_models[
+    epistasis_models['fdr_pvalue'] < 0.01
+]
+
+# write output to CSV file
+significant_results.to_csv(
+    snakemake.output[5],
+    index=False
+)

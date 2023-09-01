@@ -19,7 +19,7 @@ for i in np.arange(32):
 peak_gene_results = pd.concat(peak_gene_results)
 
 # perform multiple testing correction on p-values
-peak_gene_results['adj_p'] = false_discovery_control(peak_gene_results['p'])
+peak_gene_results['adj_p'] = false_discovery_control(peak_gene_results['boot_basic_p'])
 
 # filter for all enhancer-gene pairs with an FDR < 0.1
 peak_gene_results = peak_gene_results[peak_gene_results['adj_p'] < 0.1]
@@ -29,6 +29,10 @@ peak_gene_results.to_csv(
     snakemake.output[0],
     index = False
 )
+
+# write significant genes to separate file (for GSEA)
+unique_genes = peak_gene_results['gene'].unique()
+pd.Series(unique_genes).to_csv(snakemake.output[33], index = False)
 
 # get list of genes that have more than 1 significant peak-gene link
 gene_peak_counts = peak_gene_results['gene'].value_counts()

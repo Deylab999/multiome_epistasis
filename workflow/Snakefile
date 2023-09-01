@@ -87,7 +87,8 @@ rule find_enhancer_pairs:
         expand('results/SCENT_outputs/SCENT_output_{sample}.csv', sample=SAMPLES)
     output:
         'results/SCENT_peak_gene/significant_peak_gene_associations.csv',
-        expand('results/enhancer_pairs/enhancer_pairs_{sample}.csv', sample=SAMPLES)
+        expand('results/enhancer_pairs/enhancer_pairs_{sample}.csv', sample=SAMPLES),
+        'results/SCENT_peak_gene/SCENT_gene_set.csv'
     conda:
         'envs/pandas.yaml'
     script:
@@ -137,11 +138,15 @@ rule plot_volcano_plot:
 
 rule generate_p_value_tables:
     input:
-        expand('results/epistasis_models/epistasis_models_{sample}.csv', sample=SAMPLES)
+        expand('results/epistasis_models/epistasis_models_{sample}.csv', sample=SAMPLES),
+        expand('results/epistasis_models_normal/epistasis_models_normal_{sample}.csv', sample=SAMPLES)
     output:
         'results/p_value_tables/significant_epistasis_5e4_threshold.csv',
         'results/p_value_tables/significant_epistasis_FDR10_threshold.csv',
-        'results/p_value_tables/significant_epistasis_gene_wise_threshold.csv'
+        'results/p_value_tables/significant_epistasis_gene_wise_threshold.csv',
+        'results/p_value_tables/significant_epistasis_normal_5e4_threshold.csv',
+        'results/p_value_tables/significant_epistasis_normal_FDR10_threshold.csv',
+        'results/p_value_tables/significant_epistasis_normal_gene_wise_threshold.csv'
     conda:
         'envs/pandas.yaml'
     script:
