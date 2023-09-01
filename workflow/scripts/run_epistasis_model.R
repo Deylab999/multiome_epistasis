@@ -93,7 +93,7 @@ for (i in 1:nrow(enhancer.pairs)) {
 
     # fit linear model
     mdl <- glm(
-        gene.rna ~ enhancer.1.atac * enhancer.2.atac + percent.mito + log(umis),
+        gene.rna ~ enhancer.1.atac * enhancer.2.atac + percent.mito + offset(log(umis)),
         family = 'poisson'
     )
 
@@ -138,7 +138,7 @@ for (i in 1:nrow(enhancer.pairs)) {
 
     # implement bootstrapping
     model.df <- data.frame(cbind(gene.rna, enhancer.1.atac, enhancer.2.atac, percent.mito, umis))
-    model.formula <- as.formula('gene.rna ~ enhancer.1.atac * enhancer.2.atac + percent.mito + log(umis)')
+    model.formula <- as.formula('gene.rna ~ enhancer.1.atac * enhancer.2.atac + percent.mito + offset(log(umis))')
     bootstrap.coefs <- boot::boot(model.df, poisson.int.coefficient, R = 100, formula = model.formula, stype = 'i', parallel = 'multicore', ncpus = 8)
     bootstrap.pvalue <- basic_p(bootstrap.coefs$t0[1], bootstrap.coefs$t[, 1])
 
