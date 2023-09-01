@@ -37,6 +37,14 @@ results <- data.frame(matrix(ncol = 11, nrow = nrow(enhancer.pairs)))
 # define poisson glm function (for bootstrapping)
 poisson.int.coefficient <- function(data, idx = seq_len(nrow(data)), formula) {
     mdl <- glm(formula, family = 'poisson', data = data[idx,,drop = FALSE])
+    mdl.values <- summary(mdl)$coefficients
+    interaction.coef <- NA
+    if ("enhancer.1.atac:enhancer.2.atac" %in% rownames(mdl.values)) {
+        interaction.coef <- mdl.values[
+            'enhancer.1.atac:enhancer.2.atac',
+            'Estimate'
+        ]
+    }
     interaction.coef <- summary(mdl)$coefficients['enhancer.1.atac:enhancer.2.atac', 'Estimate']
     interaction.coef
 }
@@ -136,7 +144,7 @@ for (i in 1:nrow(enhancer.pairs)) {
 
     # implement iterative bootstrapping if p-value looks significant
     if (bootstrap.pvalue < 0.1) {
-        bootstrap.coefs <- boot:boot(model.df, poisson.int.coefficient, R = 5000, formula = model.formula, stype = 'i', parallel = 'multicore', ncpus = 8)
+        bootstrap.coefs <- boot::boot(model.df, poisson.int.coefficient, R = 5000, formula = model.formula, stype = 'i', parallel = 'multicore', ncpus = 8)
         bootstrap.pvalue <- basic_p(bootstrap.coefs$t0[1], bootstrap.coefs$t[, 1])
     }
 
